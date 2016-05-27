@@ -6,8 +6,7 @@
 
 
 
-app
-    .controller("infoController", ["$scope", "dataservice", function ($scope, dataservice) {
+app.controller("infoController", ["$scope", "dataservice", function ($scope, dataservice) {
         $scope.my = dataservice.datas;
         console.log("222",$scope.my.name)
         $scope.face =$scope.my.face;
