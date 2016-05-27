@@ -8,6 +8,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/resume.css" rel="stylesheet">
     <title>My resume</title>
+    <script src="js/dataservice.js"></script>
     <script src="js/infoController.js"></script>
 </head>
 <body>
@@ -82,66 +83,7 @@
                         <h3>Self Introduction</h3><h4>(个人简介)</h4>
                     </div>
                     <div class="panel-body">
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板 这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-                        这是一个基本的面板
-
+                        <span>{{my.info}}</span>
                     </div>
                 </div>
             </div>
@@ -307,7 +249,7 @@
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="xuewei1">学位</h4>
+                            <h4 class="modal-title" id="xuewei1">学位证书</h4>
                         </div>
                         <div class="modal-body col-md-12">
                             <img style="width: 100%;height:500px" src="../img/by.png">
@@ -347,82 +289,91 @@
                     <h3>Basic information</h3><h4>(基本信息)</h4>
                 </div>
                 <div class="panel-body">
-                    <div class="col-md-5">
-                    <span>name:</span>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>姓名:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.name}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>年龄:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.age}}</span>
+                        </div>
                     </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>age:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>age:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>age:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>age:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>age:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
-                    <div class="col-md-5">
-                        <span>name:</span>
-                    </div>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>性别:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.sex}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>英语等级:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.english}}</span>
+                        </div>
 
+                    </div>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>学历:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.education}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>专业:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.major}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>健康状况:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.health}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>婚姻状况:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.married}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>籍贯:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.home}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>现居住地:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.address}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 he">
+                        <div class="col-md-2">
+                            <span>电话:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.tel}}</span>
+                        </div>
+                        <div class="col-md-2">
+                            <span>Email:</span>
+                        </div>
+                        <div class="col-md-3">
+                            <span>{{my.email}}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
