@@ -16,6 +16,7 @@ body.main {
 }
 .hee{
     font-size: 1.5em;
+    margin-top: 1em;
 }
 
 
@@ -237,7 +238,7 @@ span.glyphicon.glyphicon-triangle-bottom {
 
 .study-grid span {
     color: #00cfbd;
-    font-size:2em;
+    font-size:1.6em;
     font-family: 'Nunito-Bold';
     text-transform: capitalize;
 
@@ -493,9 +494,14 @@ i.beh {
     text-indent: 100%;
     background: url("../img/to-top2.png") no-repeat 0px 0px;
 }
-
+.ph{
+    height: 80px;
+}
 /*-- responsive-design --*/
 @media only screen and (max-width: 1024px) {
+    .ph{
+        height: 80px;
+    }
     .header-section h1 {
         font-size: 3em;
     }
@@ -555,249 +561,7 @@ i.beh {
     .google-map iframe {
         height: 400px;
     }
+
 }
 
-@media only screen and (max-width: 768px) {
-
-    .header-section h1 {
-        font-size: 2.5em;
-    }
-
-    .header-section p {
-        font-size: 1.1em;
-    }
-
-    span.glyphicon.glyphicon-triangle-bottom {
-        font-size: 1.5em;
-    }
-
-    .study-section {
-        padding: 3em 0;
-    }
-
-    .study-grid {
-        float: left;
-        width: 50%;
-    }
-
-    .study-grid h3 {
-        font-size: 1.6em;
-    }
-
-    .study-grid p {
-        font-size: 1em;
-        padding: 1.2em 0 0 0;
-    }
-
-    .study-grid h4 {
-        font-size: 1.1em;
-    }
-
-    .service-section {
-        text-align: center;
-        padding: 3em 0;
-    }
-
-    .service-grid {
-        float: left;
-        width: 33.3%;
-    }
-
-    .service-grid h4 {
-        font-size: 1.1em;
-    }
-
-    .service-grid p {
-        font-size: 0.95em;
-    }
-
-    .social-icons {
-        padding: 3em 0;
-    }
-
-    .social-icons h3 {
-        font-size: 1.6em;
-        margin-bottom: 1.5em;
-    }
-
-    .face {
-        float: left;
-        width: 25%;
-    }
-
-    .face p {
-        font-size: 2em;
-        margin: 0 1px;
-    }
-
-    .face h4 {
-        margin-top: 2.5em;
-    }
-
-    i.facebook {
-        width: 52px;
-        height: 52px;
-        background: url(../img/img-sprite.png) no-repeat 0px 0px;
-        margin: 0 8px;
-        background-size: 410px;
-    }
-
-    i.twitter {
-        width: 52px;
-        height: 52px;
-        background: url(../img/img-sprite.png) no-repeat -52px 0px;
-        margin: 0 8px;
-        background-size: 408px;
-    }
-
-    i.google {
-        width: 52px;
-        height: 52px;
-        background: url(../img/img-sprite.png) no-repeat -105px 0px;
-        margin: 0 8px;
-        background-size: 410px;
-    }
-
-    i.beh {
-        width: 52px;
-        height: 52px;
-        background: url(../img/img-sprite.png) no-repeat -158px 0px;
-        margin: 0 8px;
-        background-size: 410px;
-    }
-
-    .contact-section {
-        padding: 3em 0;
-    }
-
-    .contact-section h3 {
-        font-size: 1.6em;
-        margin-bottom: 1.5em;
-    }
-
-    .contact-left {
-        float: left;
-        width: 50%;
-    }
-
-    .contact-right {
-        float: left;
-        width: 50%;
-    }
-
-    .contact-details form input[type="text"], .contact-details form textarea {
-        padding: 1em 1em;
-    }
-
-    .contact-details form textarea {
-        height: 185px;
-    }
-
-    .contact-details input[type="submit"] {
-        padding: 1em 1em;
-        font-size: 0.96em;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .header-section img {
-        margin-top: 5em;
-    }
-
-    .header-section h1 {
-        font-size: 2em;
-    }
-
-    .header-section p {
-        font-size: 1.05em;
-    }
-
-    .study-grid h3 {
-        font-size: 1.5em;
-    }
-
-    .study-grid {
-        float: none;
-        width: 100%;
-        margin-top: 2em;
-    }
-
-    .study1 {
-        padding: 0em 0 0;
-    }
-
-    .study2 {
-        padding: 1em 0 0;
-    }
-
-    .study-grid p {
-        font-size: 0.965em;
-        padding: 1.2em 0 0 0;
-    }
-
-    .study-section {
-        padding: 1em 0;
-    }
-
-    .study-grid h4 {
-        font-size: 1em;
-    }
-
-    .service-grid h4 {
-        font-size: 1em;
-    }
-
-    .social-icons h3 {
-        font-size: 1.5em;
-    }
-
-    i.facebook {
-        width: 44px;
-        height: 44px;
-        background: url(../img/img-sprite.png) no-repeat 0px 0px;
-        background-size: 346px;
-        margin: 0 10px;
-    }
-
-    i.twitter {
-        width: 44px;
-        height: 44px;
-        background: url(../img/img-sprite.png) no-repeat -44px 0px;
-        background-size: 345px;
-        margin: 0 10px;
-    }
-
-    i.google {
-        width: 44px;
-        height: 44px;
-        background: url(../img/img-sprite.png) no-repeat -88px 0px;
-        background-size: 345px;
-        margin: 0 10px;
-    }
-
-    i.beh {
-        width: 45px;
-        height: 44px;
-        background: url(../img/img-sprite.png) no-repeat -132px 0px;
-        background-size: 345px;
-        margin: 0 10px;
-    }
-
-    .face p {
-        font-size: 1.5em;
-        margin: 0 1px;
-    }
-
-    .contact-section h3 {
-        font-size: 1.5em;
-    }
-
-    .contact-details input[type="submit"] {
-        font-size: 0.9em;
-    }
-
-    .google-map iframe {
-        height: 350px;
-    }
-}
 

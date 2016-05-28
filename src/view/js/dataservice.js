@@ -11,10 +11,15 @@ var app = angular.module("infoApp", [])
         this.getworkinfo = function () {
             return this.workinfo;
         }
+        this.getmyself = function(){
+            return this.myself;
+        }
         this.basedatas = {
             face: true,
             work: false,
             jibenxinxi: false,
+            technology:false,
+            selfevaluation:false,
             name: "张广超",
             age: 26,
             sex: "男",
@@ -22,7 +27,8 @@ var app = angular.module("infoApp", [])
             address: "北京",
             health: "健康",
             married: "未婚",
-
+            intention:"java程序员",
+            workyear:"1年",
             education: "本科",
             major: "自动化",
             home: "辽宁朝阳",
@@ -57,8 +63,16 @@ var app = angular.module("infoApp", [])
             responsibilitylogocal:"主要负责 地勘员工信息录入功能，负责记录员工基础信息，具有增删改查等功能",
             projectlogical:     "该项目的目的为了给保险公司展现勘察农作物受灾情况的基本信息，保险公司可以通过该软件进行受灾情况的查询。" +
                                 "我主要负责开发险情 录入员工信息的录入情况，用到的框架为SSH框架前端为Bootstrap框架." +
-                                "实现功能：员工信息的增 删 改 查。信息上传，下载等功能"
+                                "实现功能：员工信息的增 删 改 查。信息上传，下载等功能",
+            technologylogicalinfo:"熟练使用Eclipse、MyEclipse、IDEA等开发工具。"+
+            "熟练使用struts1、struts2、spring、hibernate、springMVC、Angular 、Bootstrap、Mybatis等框架及其整合技术。：" +
+            "熟练使用MySQL、Oracle10g、SQLServel等数据库。"
 
-
+        }
+        this.myself = {
+            self : "熟练掌握java编程语言编程技巧，代码规范，了解Spring等编程框架，并熟练运用Eclipse等" +
+            "软件进行相关工作。了解Oracle，MySql等数据库相关操作。" +
+            " 我有较强的科学研究和动手能力，2年的自动化PLC编程，调试工作经验，1年的java开发工作经验，自始至终都很爱好编程，。" +
+            "曾经从事的工作，让我懂得了团队合作的重要性，以及培养了自己与人沟通的能力。"
         }
     })
