@@ -44,7 +44,7 @@ var app = angular.module("infoApp", [])
             "有一个质的提升。期望薪资8K-10K."
         };
         this.workinfo = {
-            technologyscore:     "Spring MVC, Mybatis,Angular Js ,Bootstrap 等",
+            technologyscore: "Spring MVC, Mybatis,Angular Js ,Bootstrap",
             toolscore:"IDEA+ tomcat7 + jdk1.8 + svn + Orical",
             responsibilityscore: "主要负责积分模块，意向合同模块编写，测试工作，完成模块所需所有功能。",
             projectscore:   "积分管理：积分礼品管理模块主要包括，礼品的创建，" +
@@ -70,9 +70,9 @@ var app = angular.module("infoApp", [])
 
         }
         this.myself = {
-            self : "熟练掌握java编程语言编程技巧，代码规范，了解Spring等编程框架，并熟练运用Eclipse等" +
+            self :"熟练掌握java编程语言编程技巧，代码规范，了解Spring等编程框架，并熟练运用Eclipse等" +
             "软件进行相关工作。了解Oracle，MySql等数据库相关操作。" +
-            " 我有较强的科学研究和动手能力，2年的自动化PLC编程，调试工作经验，1年的java开发工作经验，自始至终都很爱好编程，。" +
+            " 我有较强的科学研究和动手能力，2年的自动化PLC编程，调试工作经验，1年的java开发工作经验，自始至终都很爱好编程。" +
             "曾经从事的工作，让我懂得了团队合作的重要性，以及培养了自己与人沟通的能力。"
         }
     })
