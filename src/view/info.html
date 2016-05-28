@@ -21,7 +21,7 @@
     </div>
     <div style="height: 70px"></div>
     <div class="col-md-12">
-        <div class="col-md-3" style="width: 350px;position: fixed">
+        <div class="col-md-3">
             <div class="col-md-8">
                 <img src="../img/p1.png">
             </div>
@@ -37,7 +37,7 @@
                         </a>
                         <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
                             <li><a href="#" ng-click="jiben()"><i></i>基本信息</a></li>
-                            <li><a href="#"><i></i>工作经验</a></li>
+                            <li><a href="#" ng-click="workjob()"><i></i>工作经验</a></li>
                             <li><a href="#"><i></i>知识结构</a></li>
                             <li><a href="#"><i></i>兴趣爱好</a></li>
                             <li><a href="#"><i></i>自我评价</a></li>
@@ -76,14 +76,14 @@
             </div>
 
         </div>
-        <div class="col-md-8" style="margin-left: 300px;position: absolute" ng-show="face">
+        <div class="col-md-8"  ng-show="baseinfo.face">
             <div class="col-md-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading study-grid">
                         <h3>Self Introduction</h3><h4>(个人简介)</h4>
                     </div>
-                    <div class="panel-body">
-                        <span>{{my.info}}</span>
+                    <div class="panel-body study-grid">
+                        <span>{{baseinfo.info}}</span>
                     </div>
                 </div>
             </div>
@@ -283,7 +283,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8" style="margin-left: 300px;position: absolute" ng-show="jibenxinxi">
+        <div class="col-md-8"  ng-show="baseinfo.jibenxinxi">
             <div class="panel panel-primary">
                 <div class="panel-heading study-grid" style="background-color: aqua">
                     <h3>Basic information</h3><h4>(基本信息)</h4>
@@ -294,13 +294,13 @@
                             <span>姓名:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.name}}</span>
+                            <span>{{baseinfo.name}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>年龄:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.age}}</span>
+                            <span>{{baseinfo.age}}</span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -308,13 +308,13 @@
                             <span>性别:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.sex}}</span>
+                            <span>{{baseinfo.sex}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>英语等级:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.english}}</span>
+                            <span>{{baseinfo.english}}</span>
                         </div>
 
                     </div>
@@ -323,13 +323,13 @@
                             <span>学历:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.education}}</span>
+                            <span>{{baseinfo.education}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>专业:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.major}}</span>
+                            <span>{{baseinfo.major}}</span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -337,13 +337,13 @@
                             <span>健康状况:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.health}}</span>
+                            <span>{{baseinfo.health}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>婚姻状况:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.married}}</span>
+                            <span>{{baseinfo.married}}</span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -351,13 +351,13 @@
                             <span>籍贯:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.home}}</span>
+                            <span>{{baseinfo.home}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>现居住地:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.address}}</span>
+                            <span>{{baseinfo.address}}</span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -365,21 +365,114 @@
                             <span>电话:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.tel}}</span>
+                            <span>{{baseinfo.tel}}</span>
                         </div>
                         <div class="col-md-2">
                             <span>Email:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{my.email}}</span>
+                            <span>{{baseinfo.email}}</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="col-md-8"  ng-show="baseinfo.work">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading study-grid"  style="background-color: #c7254e">
+                        <h3>Work experience</h3><h4>(工作经验)</h4>
+                    </div>
+                    <div class="study-grid">
+                        <span style="background:url('../img/dbj.png')">我爱我家 CBS-2.0系统</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>所用技术:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.technologyscore}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>开发工具:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.toolscore}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>责任描述:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span >{{workinfo.responsibilityscore}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>项目描述:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.projectscore}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>项目描述:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.projectpreliminary}}</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="study-grid">
+                        <span style="background:url('../img/dbj.png')">保险公司地勘系统2.0</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>所用技术:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.technologylogical}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>开发工具:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.toollogical}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>责任描述:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span >{{workinfo.responsibilitylogocal}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 hee">
+                            <div class="col-md-2">
+                                <span>项目描述:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <span class="aslp">{{workinfo.projectlogical}}</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>
-
 </body>
 </html>

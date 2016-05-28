@@ -7,17 +7,25 @@
 
 
 app.controller("infoController", ["$scope", "dataservice", function ($scope, dataservice) {
-        $scope.my = dataservice.datas;
-        console.log("222",$scope.my.name)
-        $scope.face =$scope.my.face;
-        $scope.jibenxinxi = false;
-        $scope.jiben = function () {
-            $scope.face = !$scope.face;
-            $scope.jibenxinxi = !$scope.jibenxinxi;
-        }
+    $scope.baseinfo = dataservice.getbasedatas();
+    $scope.workinfo = dataservice.getworkinfo();
+    console.log("222", $scope.baseinfo)
 
-        $scope.showbiye = function () {
-            $('#saveModal').modal('show');
-        }
-        console.log("Enter the info");
-    }])
+
+    $scope.jiben = function () {
+        $scope.baseinfo.jibenxinxi = true;
+        $scope.baseinfo.face = false;
+        $scope.baseinfo.work = false;
+
+    }
+    $scope.workjob = function () {
+        $scope.baseinfo.jibenxinxi = false;
+        $scope.baseinfo.face = false;
+        $scope.baseinfo.work = true;
+    }
+
+    $scope.showbiye = function () {
+        $('#saveModal').modal('show');
+    }
+    console.log("Enter the info");
+}])

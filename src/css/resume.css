@@ -1,6 +1,8 @@
 
 .aslp{
-    font-family:����
+    font-size:1em;
+    font-family: 'Nunito-Bold';
+    text-transform: capitalize;
 }
 body.main {
     padding: 0 0;
@@ -12,6 +14,10 @@ body.main {
     font-size: 1.5em;
     height: 2em;
 }
+.hee{
+    font-size: 1.5em;
+}
+
 
 
 .log {
@@ -207,7 +213,13 @@ span.glyphicon.glyphicon-triangle-bottom {
 .study-section {
     padding: 4em 0;
 }
+.study-grid h2{
+    font-family: 'Nunito-Bold';
+    font-size: 2em;
+    text-transform: capitalize;
+    color: #393b3a;
 
+}
 .study-grid h3 {
     font-family: 'Nunito-Bold';
     font-size: 3em;
@@ -225,7 +237,11 @@ span.glyphicon.glyphicon-triangle-bottom {
 
 .study-grid span {
     color: #00cfbd;
-    font-size: 0.9em;
+    font-size:2em;
+    font-family: 'Nunito-Bold';
+    text-transform: capitalize;
+
+
 }
 
 .study-grid p {

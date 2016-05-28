@@ -10,18 +10,6 @@ var app = angular.module("resumeApp", ['ui.router'])
 
 
     }])
-    //.config(function($stateProvider,$urlRouterProvider){
-    //    $urlRouterProvider.when("", "/mainPage");
-    //    $stateProvider.state("first",{
-    //        url:"mainPage",
-    //        templateUrl:"mainresume.html"
-    //    })
-    //        .state("info",{
-    //            url:"infoPage",
-    //            templateUrl:"info.html"
-    //        })
-    //
-    //})
 
 
 
