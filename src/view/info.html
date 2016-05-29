@@ -24,12 +24,10 @@
 
         </marquee>
     </div>
-
     <div style="height: 70px"></div>
     <div class="col-md-12">
-        <img class="img-rounded imgfirst"  src="../img/headerbg.jpg">
+        <img class="img-rounded imgfirst" src="../img/headerbg.jpg">
     </div>
-
     <div class="col-md-12" style="margin-top: 30px">
         <div class="col-md-3">
             <div class="col-md-8 ">
@@ -163,13 +161,13 @@
                             <span>姓名:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.name}}</span>
+                            <span ng-bind="baseinfo.name"></span>
                         </div>
                         <div class="col-md-2">
                             <span>年龄:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.age}}</span>
+                            <span ng-bind="baseinfo.age"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -177,13 +175,13 @@
                             <span>性别:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.sex}}</span>
+                            <span ng-bind="baseinfo.sex"></span>
                         </div>
                         <div class="col-md-2">
                             <span>英语等级:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.english}}</span>
+                            <span ng-bind="baseinfo.english"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -191,13 +189,13 @@
                             <span>学历:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.education}}</span>
+                            <span ng-bind="baseinfo.education"></span>
                         </div>
                         <div class="col-md-2">
                             <span>专业:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.major}}</span>
+                            <span ng-bind="baseinfo.major"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -205,13 +203,13 @@
                             <span>健康状况:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.health}}</span>
+                            <span ng-bind="baseinfo.health"></span>
                         </div>
                         <div class="col-md-2">
                             <span>婚姻状况:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.married}}</span>
+                            <span ng-bind="baseinfo.married"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -219,13 +217,13 @@
                             <span>籍贯:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.home}}</span>
+                            <span ng-bind="baseinfo.home"></span>
                         </div>
                         <div class="col-md-2">
                             <span>现居住地:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.address}}</span>
+                            <span ng-bind="baseinfo.address"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -233,13 +231,13 @@
                             <span>求职意向:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.intention}}</span>
+                            <span ng-bind="baseinfo.intention"></span>
                         </div>
                         <div class="col-md-2">
                             <span>工作年限:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.workyear}}</span>
+                            <span ng-bind="baseinfo.workyear"></span>
                         </div>
                     </div>
                     <div class="col-md-12 he">
@@ -247,13 +245,13 @@
                             <span>电话:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.tel}}</span>
+                            <span ng-bind="baseinfo.tel"></span>
                         </div>
                         <div class="col-md-2">
                             <span>Email:</span>
                         </div>
                         <div class="col-md-3">
-                            <span>{{baseinfo.email}}</span>
+                            <span ng-bind="baseinfo.email"></span>
                         </div>
                     </div>
                 </div>
@@ -285,7 +283,7 @@
                                 <span>所用技术:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.technologyscore}}</span>
+                                <span class="aslp" ng-bind="workinfo.technologyscore"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -293,7 +291,7 @@
                                 <span>开发工具:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.toolscore}}</span>
+                                <span class="aslp" ng-bind="workinfo.toolscore"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -301,7 +299,7 @@
                                 <span>责任描述:</span>
                             </div>
                             <div class="col-md-10">
-                                <span>{{workinfo.responsibilityscore}}</span>
+                                <span ng-bind="workinfo.responsibilityscore"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -309,7 +307,7 @@
                                 <span>项目描述:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.projectscore}}</span>
+                                <span class="aslp" ng-bind="workinfo.projectscore"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -317,11 +315,9 @@
                                 <span>项目描述:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.projectpreliminary}}</span>
+                                <span class="aslp" ng-bind="workinfo.projectpreliminary"></span>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="study-grid">
                         <span style="background:url('../img/dbj.png')">保险公司地勘系统2.0</span>
@@ -332,7 +328,7 @@
                                 <span>所用技术:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.technologylogical}}</span>
+                                <span class="aslp" ng-bind="workinfo.technologylogical"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -340,7 +336,7 @@
                                 <span>开发工具:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.toollogical}}</span>
+                                <span class="aslp" ng-bind="workinfo.toollogical"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -348,7 +344,7 @@
                                 <span>责任描述:</span>
                             </div>
                             <div class="col-md-10">
-                                <span>{{workinfo.responsibilitylogocal}}</span>
+                                <span ng-bind="workinfo.responsibilitylogocal"></span>
                             </div>
                         </div>
                         <div class="col-md-12 hee">
@@ -356,7 +352,7 @@
                                 <span>项目描述:</span>
                             </div>
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.projectlogical}}</span>
+                                <span class="aslp" ng-bind="workinfo.projectlogical"></span>
                             </div>
                         </div>
                     </div>
@@ -371,36 +367,36 @@
                     </div>
                     <div class="panel-body">
                         <div class="col-md-12">
-                            <div class="col-md-3 imgborder" >
+                            <div class="col-md-3 imgborder">
                                 <img class=" col-md-12 ph" src="../img/timg/angular.png">
                             </div>
-                            <div class="col-md-3 imgborder" >
+                            <div class="col-md-3 imgborder">
                                 <img class="col-md-12 ph" src="../img/timg/bootsrap.png">
                             </div>
-                            <div class="col-md-3 imgborder" >
+                            <div class="col-md-3 imgborder">
                                 <img class="col-md-12 ph" src="../img/timg/html5.png">
                             </div>
-                            <div class="col-md-3 imgborder" >
+                            <div class="col-md-3 imgborder">
                                 <img class="col-md-12 ph" src="../img/timg/css3.png">
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="col-md-3 imgborder" >
+                            <div class="col-md-3 imgborder">
                                 <img class=" col-md-12 ph" src="../img/timg/java.png">
                             </div>
-                            <div class="col-md-3 imgborder" >
-                            <img class="col-md-12 ph" src="../img/timg/javascript.png">
+                            <div class="col-md-3 imgborder">
+                                <img class="col-md-12 ph" src="../img/timg/javascript.png">
                             </div>
-                            <div class="col-md-3 imgborder"  >
+                            <div class="col-md-3 imgborder">
                                 <img class="col-md-12 ph" src="../img/timg/jquery.png">
                             </div>
-                            <div class="col-md-3 imgborder"  >
+                            <div class="col-md-3 imgborder">
                                 <img class="col-md-12 ph" src="../img/timg/mysql.png">
                             </div>
                         </div>
                         <div class="col-md-12 hee">
                             <div class="col-md-10">
-                                <span class="aslp">{{workinfo.technologylogicalinfo}}</span>
+                                <span class="aslp" ng-bind="workinfo.technologylogicalinfo"></span>
                             </div>
                         </div>
                     </div>
@@ -412,13 +408,13 @@
                         <h3>skills..<span>!</span></h3>
                         <div class="study2"></div>
                         <div class="col-md-offset-1">
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>angular+jquery</h4>
                             </div>
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>html 5</h4>
                             </div>
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>css</h4>
                             </div>
                             <div class="col-md-3 contact-right">
@@ -433,7 +429,6 @@
                                 <div class="progress-bar progress-bar-success" role="progressbar"
                                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                      style="width: 25%;">
-
                                 </div>
                                 <div class="progress-bar progress-bar-info" role="progressbar"
                                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
@@ -454,16 +449,16 @@
                         </div>
                         <div class="study2"></div>
                         <div class="col-md-offset-1">
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>SSH</h4>
                             </div>
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>SpringMVC</h4>
                             </div>
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>mybatis</h4>
                             </div>
-                            <div class="col-md-3 contact-right" >
+                            <div class="col-md-3 contact-right">
                                 <h4>orhers</h4>
                             </div>
                         </div>
@@ -496,13 +491,13 @@
                         </div>
                         <div class="study2"></div>
                         <div class="col-md-offset-1">
-                            <div class="col-md-3" >
+                            <div class="col-md-3">
                                 <h4>orical</h4>
                             </div>
-                            <div class="col-md-3" >
+                            <div class="col-md-3">
                                 <h4>mysql</h4>
                             </div>
-                            <div class="col-md-6" >
+                            <div class="col-md-6">
                                 <h4>others</h4>
                             </div>
                         </div>
@@ -528,7 +523,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
