@@ -59,7 +59,7 @@ var app = angular.module("infoApp", [])
                                 "独立完成模块并按照项目需求进行修改，测试。",
 
             technologylogical:  "Spring MVC, Mybatis,Angular Js ,Bootstrap 等",
-            toollogical:        "MyEclipse + tomcat7 + jdk1.7 + svn + mysql5",
+            toollogical:        "MyEclipse + tomcat7 + jdk1.7 + svn + mysql",
             responsibilitylogocal:"主要负责 地勘员工信息录入功能，负责记录员工基础信息，具有增删改查等功能",
             projectlogical:     "该项目的目的为了给保险公司展现勘察农作物受灾情况的基本信息，保险公司可以通过该软件进行受灾情况的查询。" +
                                 "我主要负责开发险情 录入员工信息的录入情况，用到的框架为SSH框架前端为Bootstrap框架." +
