@@ -1,53 +1,62 @@
 
-.aslp{
-    font-size:1em;
+@font-face {
     font-family: 'Nunito-Bold';
-    text-transform: capitalize;
+    src: url(../fonts/Nunito-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
 }
 body.main {
     padding: 0 0;
     margin: 0 0;
     background-color: #deecdf;
-
 }
-.he{
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+p {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+ul {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+input[type="button"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+
+.aslp {
+    font-size: 1em;
+    font-family: 'Nunito-Bold';
+    text-transform: capitalize;
+}
+
+.he {
     font-size: 1.5em;
     height: 2em;
 }
-.hee{
+.hee {
     font-size: 1.5em;
     margin-top: 1em;
-}
-
-
-
-.log {
-    top: 100px;
-    left: 20%;
-    margin: -100px 0 0 -150px;
-    width: 100%;
-    height: 300px;
-    z-index: 99;
-    border-style: outset;
-    border-width: 2px;
-    border-color: #000
-}
-
-a.normal {
-    font-style: normal;
-    color: aliceblue;
-}
-
-a.italic {
-    font-style: italic;
-    color: aliceblue;
-}
-
-a.oblique {
-    font-style: oblique;
-    color: aliceblue;
-
-    font-size: 25px;
 }
 
 #main-nav {
@@ -125,63 +134,25 @@ a.oblique {
     cursor: pointer;
 }
 
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-@font-face {
-    font-family: 'Nunito-Bold';
-    src: url(../fonts/Nunito-Bold.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
-}
-
-body a {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-
-input[type="button"] {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    padding: 0 0;
-    margin: 0 0;
-}
-
-p {
-    padding: 0 0;
-    margin: 0 0;
-}
-
-ul {
-    padding: 0 0;
-    margin: 0 0;
-}
-
 .header-section {
-
     text-align: center;
+}
 
+.header-section-face{
+    width: 30%;
 }
 
 .header-section img {
     margin-top: 7em;
 }
-
+.imgfirst{
+    width: 100%;
+    height: 150px;
+}
+.imgborder{
+    border:1px solid #F00;
+    border-radius: 15px;
+}
 .header-section h1 {
     font-family: 'Nunito-Bold';
     font-size: 4em;
@@ -201,25 +172,19 @@ ul {
     color: #393b3a;
 }
 
-span.glyphicon.glyphicon-triangle-bottom {
-    font-size: 2em;
-    color: #fff;
-    background-color: rgb(0, 207, 189);
-    padding: 0.5em 2em;
-    border-radius: 5px 5px 0 0;
-    margin-top: 2.5em;
-}
 
 .study-section {
     padding: 4em 0;
 }
-.study-grid h2{
+
+.study-grid h2 {
     font-family: 'Nunito-Bold';
     font-size: 2em;
     text-transform: capitalize;
     color: #393b3a;
 
 }
+
 .study-grid h3 {
     font-family: 'Nunito-Bold';
     font-size: 3em;
@@ -227,7 +192,8 @@ span.glyphicon.glyphicon-triangle-bottom {
     color: #393b3a;
 
 }
-.study-grid h4{
+
+.study-grid h4 {
     font-family: 'Nunito-Bold';
     font-size: 2em;
     text-transform: capitalize;
@@ -237,10 +203,9 @@ span.glyphicon.glyphicon-triangle-bottom {
 
 .study-grid span {
     color: #00cfbd;
-    font-size:1.6em;
+    font-size: 1.6em;
     font-family: 'Nunito-Bold';
     text-transform: capitalize;
-
 
 }
 
@@ -249,14 +214,6 @@ span.glyphicon.glyphicon-triangle-bottom {
     color: #393b3a;
     padding: 1.1em 0 0 0;
 }
-
-.study-grid label {
-    font-size: 0.8em;
-    color: #9CA69D;
-    margin: 0 0 0 7px;
-}
-
-
 
 .study-grid h4 {
     font-size: 1.3em;
@@ -290,29 +247,7 @@ span.glyphicon.glyphicon-triangle-bottom {
     line-height: 1.8em;
 }
 
-span.glyphicon.glyphicon-pencil {
-    font-size: 2em;
-    color: #C6D9C7;
-    border-radius: 50px;
-    border: 2px solid;
-    padding: 1em;
-}
 
-span.glyphicon.glyphicon-phone {
-    font-size: 2em;
-    color: #C6D9C7;
-    border-radius: 50px;
-    border: 2px solid;
-    padding: 1em;
-}
-
-span.glyphicon.glyphicon-signal {
-    font-size: 2em;
-    color: #C6D9C7;
-    border-radius: 50px;
-    border: 2px solid;
-    padding: 1em;
-}
 
 .social-icons {
     background: #fff;
@@ -411,11 +346,6 @@ i.beh {
     font-weight: 600;
 }
 
-.contact-details form textarea {
-    height: 244px;
-    resize: none;
-    width: 100%;
-}
 
 .contact-right {
     text-align: right;
@@ -449,36 +379,6 @@ i.beh {
     border: 0;
 }
 
-.footer-section {
-    padding: 2em 0;
-    text-align: center;
-    background: #deecdf;
-}
-
-.footer-bottom {
-    margin-top: 1em;
-}
-
-.footer-top p {
-    font-size: 0.9em;
-    color: #1B1B1B;
-    font-weight: 400;
-}
-
-.footer-top a {
-    font-size: 1em;
-    color: #1B1B1B;
-    font-weight: 400;
-    text-transform: capitalize;
-}
-
-.footer-top a:hover {
-    color: #1B1B1B;
-}
-
-.footer-top a {
-    margin: 0 6px 0 6px;
-}
 
 #toTop {
     display: none;
@@ -493,74 +393,56 @@ i.beh {
     text-indent: 100%;
     background: url("../img/to-top2.png") no-repeat 0px 0px;
 }
-.ph{
+
+.ph {
     height: 80px;
 }
-/*-- responsive-design --*/
-@media only screen and (max-width: 1024px) {
-    .ph{
-        height: 80px;
-    }
-    .header-section h1 {
-        font-size: 3em;
-    }
 
-    .header-section p {
-        font-size: 1.2em;
-    }
-
-    .study-grid h3 {
-        font-size: 2em;
-    }
-
-    .study-grid p {
-        font-size: 1.1em;
-    }
-
-    .study-grid h4 {
-        font-size: 1.3em;
-    }
-
-    .service-grid h4 {
-        font-size: 1.3em;
-    }
-
-    .service-grid p {
-        font-size: 0.965em;
-    }
-
-    .social-icons h3 {
-        font-size: 2em;
-    }
-
-    .face p {
-        font-size: 2.5em;
-    }
-
-    .face h4 {
-        margin-top: 2em;
-    }
-
-    .contact-section h3 {
-        font-size: 2em;
-    }
-
-    .contact-details form input[type="text"], .contact-details form textarea {
-        font-size: 1em;
-    }
-
-    .contact-details form textarea {
-        height: 225px;
-    }
-
-    .contact-details input[type="submit"] {
-        padding: 1em 1.5em;
-    }
-
-    .google-map iframe {
-        height: 400px;
-    }
-
+.header-section h1 {
+    font-size: 3em;
 }
+
+.header-section p {
+    font-size: 1.2em;
+}
+
+.study-grid h3 {
+    font-size: 2em;
+}
+
+.study-grid p {
+    font-size: 1.1em;
+}
+
+.study-grid h4 {
+    font-size: 1.3em;
+}
+
+.service-grid h4 {
+    font-size: 1.3em;
+}
+
+.service-grid p {
+    font-size: 0.965em;
+}
+
+.social-icons h3 {
+    font-size: 2em;
+}
+
+.face p {
+    font-size: 2.5em;
+}
+
+.face h4 {
+    margin-top: 2em;
+}
+
+.contact-section h3 {
+    font-size: 2em;
+}
+
+
+
 
 
